@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<title>John Mayer Activity 05</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
+<style>
+body, html {
+  height: 100%;
+  font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+}
+
+.bgimg {
+  background-position: center;
+  background-size: cover;
+  background-image: url("JM cover.jpg");
+  min-height: 100%;
+}
+
+.menu {
+  display: none;
+}
+</style>
+<body>
+
+<div class="w3-top">
+  <div class="w3-row w3-padding w3-deep-purple">
+    <div class="w3-col s3">
+      <a href="#" class="w3-button w3-block w3-deep-purple">HOME</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="#about" class="w3-button w3-block w3-deep-purple">ABOUT</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="#menu" class="w3-button w3-block w3-deep-purple">MUSIC</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="#where" class="w3-button w3-block w3-deep-purple">DISCOGRAPHY</a>
+    </div>
+  </div>
+</div>
+
+<!-- Header with image -->
+<header class="bgimg w3-display-container w3-colour" id="home">
+  <div class="w3-display-bottomleft w3-center w3-padding-large w3-hide-small">
+    <span class="w3-tag">Favourite Musician</span>
+  </div>
+  <div class="w3-display-middle w3-center">
+    <span class="w3-text-light-grey" style="font-size:150px">JOHN<br>MAYER</span>
+  </div>
+  <div class="w3-display-bottomright w3-center w3-padding-large">
+    <span class="w3-text-white">Activity 05</span>
+  </div>
+</header>
+
+<!-- Add a background color and large text to the whole page -->
+<div class="w3-light-grey w3-colour w3-large">
+
+<!-- About Container -->
+<div class="w3-container" id="about">
+  <div class="w3-content" style="max-width:700px">
+    <h5 class="w3-center w3-padding-64 "><span class="w3-tag w3-wide w3-deep-purple">ABOUT THE ARTIST</span></h5>
+    <p>Singer, songwriter and guitarist John Mayer’s soft rock earned him a number of Grammy Awards, paving the way for similar success in a blues-based vein.</p>
+    <p>John Mayer launched his music career in the late 1990s. In 2001, he released the album Room for Squares, and two years later he debuted Heavier Things. Both efforts were commercially successful, multi-platinum albums that spawned several hits, including Grammy-winning songs like "Your Body Is a Wonderland" and "Daughters." Having established himself in adult contemporary rock, Mayer broadened the scope of his sound to incorporate the blues, forming the John Mayer Trio in the mid 2000s. In 2015, he collaborated with Grateful Dead's Bob Weir to form the touring band Dead & Company.</p>
+    <div class="w3-panel w3-leftbar w3-white">
+      <p><i>"No, I'm not color blind,
+I know the world is black and white.
+I try to keep an open mind,
+but I just can't sleep on this, tonight.
+Stop this train!
+I want to get off and go home again.
+I can't take the speed it's moving in,
+I know I can't.
+But, honestly, won't someone stop this train?"</i></p>
+      <p>John Mayer, Stop This Train</p>
+    </div>
+    <img src="JM2.png">
+    <p><strong>Picture By:</strong> Daniel</p>
+    <p><strong>Source:</strong> John Mayer's Instagram</p>
+  </div>
+</div>
+
+<!-- Menu Container -->
+<div class="w3-container" id="menu">
+  <div class="w3-content" style="max-width:700px">
+ 
+    <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide w3-deep-purple">MUSIC</span></h5>
+	  
+	  <iframe style="width:100%;max-width:1000px" height="500px" src="https://www.youtube.com/embed/mS2o4q7vRFM">
+</iframe>
+<iframe style="width:100%;max-width:1000px" height="500px" src="https://www.youtube.com/embed/ob-jS7bqYgI">
+</iframe>
+	  <iframe style="width:100%;max-width:1000px" height="500px" src="https://www.youtube.com/embed/A2wsTv3zVD0">
+</iframe>
+
+  
+
+
+<!-- Contact/Area Container -->
+<div class="w3-container" id="where" style="padding-bottom:32px;">
+  <div class="w3-content" style="max-width:700px">
+    <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide w3-deep-purple">DISCOGRAPHY</span></h5>
+    <p>The discography of American singer-songwriter and guitarist John Mayer consists of seven studio albums, seven live albums, three compilation albums, two video albums, four extended plays, twenty-four singles and seventeen music videos.</p>
+    <img src="JMDISC.png" class="w3-image" style="width:100%">
+   
+    
+  </div>
+</div>
+
+<!-- End page content -->
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-deep-purple w3-padding-48 w3-large">
+  <p>Kushagr - 5th Semester - HCD - Upskilling HTML&CSS - November 2020</p>
+</footer>
+
+<script>
+// Tabbed Menu
+function openMenu(evt, menuName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("menu");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" w3-dark-grey", "");
+  }
+  document.getElementById(menuName).style.display = "block";
+  evt.currentTarget.firstElementChild.className += " w3-dark-grey";
+}
+document.getElementById("myLink").click();
+	 
+</script>
+
+</body>
+</html>
